@@ -1,90 +1,70 @@
-# Yelp Data Mining Project  
+# Yelp Data Mining Project
 
-Data mining and analysis of Yelp reviews to discover cuisines, popular dishes, restaurant recommendations, and hygiene predictions.  
+Data mining and analysis of Yelp reviews to discover cuisines, popular dishes, restaurant recommendations, and hygiene predictions.
 
----
+## Overview
+This project applies data mining techniques to the Yelp dataset to extract insights that support better dining decisions.  
+The work includes topic modeling, cuisine mapping, dish recognition, popularity analysis, restaurant recommendations, and hygiene prediction.  
+Deliverables include Python scripts, reports, and visual outputs.
 
-## 📌 Overview  
-This project applies end-to-end **data mining techniques** on the Yelp dataset (1.6M reviews, 61k businesses, 366k users).  
-The goal is to extract actionable insights to help people make better dining decisions.  
+## Repository Structure
+- `scripts/` – Python scripts for each task:
+  - `task1.py`
+  - `task2.py`
+  - `task3.py`
+  - `task4_5.py`
+  - `task6.py`
+- `reports/` – Individual task reports and the final report (PDFs)
+- `report_overview/` – Overview documents (PDFs)
+- `visuals/` – Figures and charts
+- `data/` – Placeholder for Yelp dataset (not included in repository)
 
-We implemented tasks ranging from **topic modeling** to **predictive modeling**, producing both **visualizations** and **reports**.  
-
----
-
-## 🗂️ Project Tasks  
-
-### **Task 1 – Exploratory Topic Modeling**  
-- Extracted topics from Yelp reviews using **LDA/PLSA**.  
-- Compared topics across **positive vs negative reviews**.  
+## Project Tasks
+### Task 1 – Exploratory Topic Modeling
+- Extracted topics from Yelp reviews using LDA/PLSA.  
+- Compared topics across positive and negative reviews.  
 - Visualized distributions of ratings and review patterns.  
-📄 [Report](reports/Task1.pdf) | 💻 [Code](code/task1.py)  
+**Files**: [Report](reports/Task%201.pdf) | [Code](scripts/task1.py)
 
----
-
-### **Task 2 – Cuisine Map Construction**  
+### Task 2 – Cuisine Map Construction
 - Represented cuisines using aggregated restaurant reviews.  
-- Computed cuisine similarities (TF-IDF, LDA, cosine similarity).  
-- Visualized a **cuisine similarity map** with clustering.  
-📄 [Report](reports/Task2.pdf) | 💻 [Code](code/task2.py)  
+- Computed cuisine similarities (TF-IDF, cosine similarity, LDA).  
+- Generated a cuisine similarity map with clustering.  
+**Files**: [Report](reports/Task%202.pdf) | [Code](scripts/task2.py)
 
----
+### Task 3 – Dish Recognition
+- Built and refined a dish name recognizer using SegPhrase, ToPMine, and word2vec.  
+- Identified candidate dishes and expanded with automatic labeling.  
+**Files**: [Report](reports/Task%203.pdf) | [Code](scripts/task3.py)
 
-### **Task 3 – Dish Recognition**  
-- Refined candidate dish names using manual + automatic labeling.  
-- Expanded dish list using **SegPhrase, ToPMine, word2vec**.  
-- Built a **dish recognizer** to identify popular items per cuisine.  
-📄 [Report](reports/Task3.pdf) | 💻 [Code](code/task3.py)  
+### Task 4 – Mining Popular Dishes
+- Ranked dishes by frequency and sentiment in reviews.  
+- Produced visualizations of popular dishes by cuisine.  
+**Files**: [Report](reports/Task%204.pdf) | [Code](scripts/task4_5.py)
 
----
+### Task 5 – Restaurant Recommendation
+- Recommended restaurants based on dish-specific mentions.  
+- Designed ranking functions combining frequency and sentiment.  
+**Files**: [Report](reports/Task%205.pdf) | [Code](scripts/task4_5.py)
 
-### **Task 4 – Mining Popular Dishes**  
-- Ranked dishes by **frequency + sentiment of mentions** in reviews.  
-- Generated visualizations of **top dishes per cuisine**.  
-📄 [Report](reports/Task4_5.pdf) | 💻 [Code](code/task4_5.py)  
+### Task 6 – Hygiene Prediction
+- Predicted restaurant health inspection outcomes.  
+- Used textual and non-textual features (cuisine, location, ratings).  
+- Evaluated models with F1-score to address class imbalance.  
+**Files**: [Report](reports/Task%206.pdf) | [Code](scripts/task6.py)
 
----
-
-### **Task 5 – Restaurant Recommendation**  
-- Recommended restaurants based on **dish-specific reviews**.  
-- Designed ranking functions combining mentions + sentiment.  
-- Produced **dish-aware restaurant rankings**.  
-📄 [Report](reports/Task4_5.pdf) | 💻 [Code](code/task4_5.py)  
-
----
-
-### **Task 6 – Hygiene Prediction**  
-- Predicted whether restaurants pass **public health inspections**.  
-- Combined **textual features** (reviews) with **non-textual data** (location, cuisine, ratings).  
-- Evaluated classifiers using **F1-score** to handle class imbalance.  
-📄 [Report](reports/Task6.pdf) | 💻 [Code](code/task6.py)  
-
----
-
-### **Final Report**  
+### Final Report
 - Summarized all findings.  
-- Highlighted **usefulness of results**, **novel contributions**, and **new insights**.  
-📄 [Final Report](reports/Final_Report.pdf)  
+- Highlighted contributions and practical implications.  
+**Files**: [Final Report](reports/Final%20Report.pdf)
 
----
+## Technical Stack
+- **Languages/Tools**: Python, Pandas, NumPy, Matplotlib, Scikit-learn, NLTK, TextBlob  
+- **Techniques**: Topic modeling (LDA/PLSA), TF-IDF, clustering, word embeddings, phrase mining  
+- **Models**: Logistic Regression, SVM, Naïve Bayes, ensemble classifiers  
 
-## 📊 Key Results  
-- Cuisine maps revealed **clusters of related cuisines** (e.g., Indian ↔ Pakistani).  
-- Dish recognizer surfaced both **expected favorites** and **hidden gems**.  
-- Restaurant recommender enabled **dish-specific choices** instead of generic ratings.  
-- Hygiene prediction models achieved strong performance on imbalanced data.  
-
----
-
-## 🛠️ Tech Stack  
-- **Languages/Tools**: Python, Jupyter, Pandas, NumPy, Matplotlib, Seaborn  
-- **Algorithms**: LDA, PLSA, TF-IDF, clustering (k-means, hierarchical), word2vec, SegPhrase, ToPMine  
-- **ML Models**: Logistic Regression, SVM, Naive Bayes, ensemble classifiers  
-
----
-
-## ▶️ Usage  
-Clone the repository and install dependencies:  
+## Usage
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/<your-username>/yelp-data-mining-project.git
