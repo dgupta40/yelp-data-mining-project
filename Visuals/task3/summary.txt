@@ -1,0 +1,61 @@
+Task 3 Results
+===============
+
+Task 3.1 - Manual Tagging:
+Started with: 142 labels
+Ended with: 134 labels
+Good dishes: 27
+
+Cleaned dish list:
+  basmati rice
+  biryani
+  brown rice
+  chick peas
+  chicken tikka
+  chicken tikka masala
+  chicken wings
+  curry
+  dal
+  flat bread
+  fried rice
+  gluten free
+  gulab jamun
+  lassi
+  masala
+  naan
+  paneer
+  rice pudding
+  rogan josh
+  samosa
+  south india
+  street food
+  tandoori chicken
+  tikka masala
+  tomato sauce
+  tomato soup
+  white rice
+
+Task 3.2 - Pattern Mining:
+Found 20 new candidates
+
+New dish candidates:
+  lamb vindaloo (appeared 11 times)
+  lunch buffet (appeared 10 times)
+  indian food (appeared 10 times)
+  and it (appeared 9 times)
+  chicken curry (appeared 8 times)
+  garlic naan (appeared 8 times)
+  lamb korma (appeared 6 times)
+  palak paneer (appeared 5 times)
+  chicken korma (appeared 5 times)
+  chicken vindaloo (appeared 5 times)
+  but it (appeared 4 times)
+  butter chicken (appeared 4 times)
+  lamb curry (appeared 4 times)
+  chicken masala (appeared 4 times)
+  dinner here (appeared 4 times)
+  lamb biryani (appeared 3 times)
+  a groupon (appeared 3 times)
+  chicken biryani (appeared 3 times)
+  butter chicken which (appeared 3 times)
+  chicken tikki masala (appeared 3 times)
